@@ -1,4 +1,5 @@
 {
+    "profile": "tabular-data-package",
     "title": "ExchangeRates",
     "name": "exchange-rates",
     "sources": [
@@ -11,6 +12,13 @@
         {
             "name": "odc-pddl",
             "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
+            "path": "http://opendatacommons.org/licenses/pddl/"
+        }
+    ],
+    "views": [
+        {
+            "name": "exchange-rates-graph",
+            "title": "Daily exchange rates graph",
             "path": "http://opendatacommons.org/licenses/pddl/"
         }
     ],
@@ -27,7 +35,8 @@
                     {
                         "name": "Date",
                         "type": "date",
-                        "format": "default"
+                        "format": "default",
+                        "description": "Date in ISO format"
                     },
                     {
                         "name": "Country",
@@ -57,7 +66,8 @@
                     {
                         "name": "Date",
                         "type": "date",
-                        "format": "default"
+                        "format": "default",
+                        "description": "Date in ISO format"
                     },
                     {
                         "name": "Country",
@@ -87,7 +97,8 @@
                     {
                         "name": "Date",
                         "type": "date",
-                        "format": "default"
+                        "format": "default",
+                        "description": "Date in ISO format"
                     },
                     {
                         "name": "Country",
