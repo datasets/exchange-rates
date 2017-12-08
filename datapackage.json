@@ -1,4 +1,19 @@
 {
+    "title": "ExchangeRates",
+    "name": "exchange-rates",
+    "sources": [
+        {
+            "title": "Federal Reserve Bank of St. Louis",
+            "path": "https://fred.stlouisfed.org/categories/158"
+        }
+    ],
+    "licences": [
+        {
+            "name": "odc-pddl",
+            "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
+            "path": "http://opendatacommons.org/licenses/pddl/"
+        }
+    ],
     "resources": [
         {
             "path": "data/yearly.csv",
@@ -10,178 +25,18 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "Data",
+                        "name": "Date",
                         "type": "date",
                         "format": "default"
                     },
                     {
-                        "name": "Australia",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Austria",
+                        "name": "Country",
                         "type": "string",
                         "format": "default"
                     },
                     {
-                        "name": "Belgium",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Brazil",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Canada",
+                        "name": "Value",
                         "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "China",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Denmark",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Euro",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Finland",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "France",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Germany",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Greece",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Hong Kong",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "India",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Ireland",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Italy",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Japan",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Malaysia",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Mexico",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Netherlands",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "New Zealand",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Norway",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Portugal",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Singapore",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "South Africa",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "South Korea",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Spain",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Sri Lanka",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Sweden",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Switzerland",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Taiwan",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Thailand",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "United Kingdom",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Venezuela",
-                        "type": "string",
                         "format": "default"
                     }
                 ],
@@ -200,178 +55,18 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "Data",
+                        "name": "Date",
                         "type": "date",
                         "format": "default"
                     },
                     {
-                        "name": "Australia",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Austria",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Belgium",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Brazil",
+                        "name": "Country",
                         "type": "string",
                         "format": "default"
                     },
                     {
-                        "name": "Canada",
+                        "name": "Value",
                         "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "China",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Denmark",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Euro",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Finland",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "France",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Germany",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Greece",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Hong Kong",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "India",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Ireland",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Italy",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Japan",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Malaysia",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Mexico",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Netherlands",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "New Zealand",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Norway",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Portugal",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Singapore",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "South Africa",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "South Korea",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Spain",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Sri Lanka",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Sweden",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Switzerland",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Taiwan",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Thailand",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "United Kingdom",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Venezuela",
-                        "type": "string",
                         "format": "default"
                     }
                 ],
@@ -390,178 +85,18 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "Data",
+                        "name": "Date",
                         "type": "date",
                         "format": "default"
                     },
                     {
-                        "name": "Australia",
+                        "name": "Country",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Value",
                         "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Austria",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Belgium",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Brazil",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Canada",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "China",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Denmark",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Euro",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Finland",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "France",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Germany",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Greece",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Hong Kong",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "India",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Ireland",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Italy",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Japan",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Malaysia",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Mexico",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Netherlands",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "New Zealand",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Norway",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Portugal",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Singapore",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "South Africa",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "South Korea",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Spain",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Sri Lanka",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Sweden",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Switzerland",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Taiwan",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Thailand",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "United Kingdom",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Venezuela",
-                        "type": "string",
                         "format": "default"
                     }
                 ],

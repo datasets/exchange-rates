@@ -12,7 +12,11 @@ As the output three files are generated:
 * monthly.csv
 * yearly.csv
 
-In which columns are countries and rows are dates.
+CSV files have columns:
+
+* Date
+* Country
+* Value
 
 ## Preparation
 Run python script:

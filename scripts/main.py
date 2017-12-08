@@ -14,7 +14,7 @@ base_url = 'https://fred.stlouisfed.org/data/'
 
 
 def values(frequency):
-    output_dict = {}
+    output_array = []
     number = -1
     for country in country_codes:
         if frequency == "daily":
@@ -43,36 +43,24 @@ def values(frequency):
                     if country in inverse:
                         if value != '':
                             value = str(round(1 / float(value), 4))
-                    if date in output_dict.keys():
-                        output_dict[date][number] = value
-                    else:
-                        output_dict[date] = []
-                        for num in range(len(country_codes.keys())):
-                            output_dict[date].append('')
-                        output_dict[date][number] = value
+
+                    country_array = [date, country, value]
+                    print(country_array)
+
+                    output_array.append(country_array)
 
                 if 'DATE' in line_str and 'VALUE' in line_str and header:
                     header = False
 
-        print('Done')
-
-    ordered = OrderedDict(sorted(output_dict.items(), key=lambda t: t[0]))
-
-    return ordered
+    return output_array
 
 
-def print_to_csv(dict, location):
+def print_to_csv(output, location):
     file = open(location, 'w')
-    hdr = 'Data'
-    for cnt in country_codes.keys():
-        hdr = hdr + ',' + cnt
-
+    hdr = 'Date,Country,Value'
     file.write(hdr + '\n')
-    for key, vs in dict.items():
-        out = key
-        for v in vs:
-            out = out + ',' + v.strip()
-        file.write(out + '\n')
+    for triplet in output:
+        file.write(triplet[0]+','+triplet[1]+','+triplet[2]+'\n')
 
     file.close()
 
