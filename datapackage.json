@@ -1,0 +1,574 @@
+{
+    "resources": [
+        {
+            "path": "data/yearly.csv",
+            "profile": "tabular-data-resource",
+            "encoding": "utf-8",
+            "name": "yearly",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "Data",
+                        "type": "date",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Australia",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Austria",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Belgium",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Brazil",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Canada",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "China",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Denmark",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Euro",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Finland",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "France",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Germany",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Greece",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Hong Kong",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "India",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Ireland",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Italy",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Japan",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Malaysia",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Mexico",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Netherlands",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "New Zealand",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Norway",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Portugal",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Singapore",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "South Africa",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "South Korea",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Spain",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Sri Lanka",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Sweden",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Switzerland",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Taiwan",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Thailand",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "United Kingdom",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Venezuela",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        },
+        {
+            "path": "data/monthly.csv",
+            "profile": "tabular-data-resource",
+            "encoding": "utf-8",
+            "name": "monthly",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "Data",
+                        "type": "date",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Australia",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Austria",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Belgium",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Brazil",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Canada",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "China",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Denmark",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Euro",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Finland",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "France",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Germany",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Greece",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Hong Kong",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "India",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Ireland",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Italy",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Japan",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Malaysia",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Mexico",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Netherlands",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "New Zealand",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Norway",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Portugal",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Singapore",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "South Africa",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "South Korea",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Spain",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Sri Lanka",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Sweden",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Switzerland",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Taiwan",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Thailand",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "United Kingdom",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Venezuela",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        },
+        {
+            "path": "data/daily.csv",
+            "profile": "tabular-data-resource",
+            "encoding": "utf-8",
+            "name": "daily",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "Data",
+                        "type": "date",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Australia",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Austria",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Belgium",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Brazil",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Canada",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "China",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Denmark",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Euro",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Finland",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "France",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Germany",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Greece",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Hong Kong",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "India",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Ireland",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Italy",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Japan",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Malaysia",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Mexico",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Netherlands",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "New Zealand",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Norway",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Portugal",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Singapore",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "South Africa",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "South Korea",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Spain",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Sri Lanka",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Sweden",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Switzerland",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Taiwan",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Thailand",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "United Kingdom",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Venezuela",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
