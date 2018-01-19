@@ -1,119 +1,163 @@
 {
-    "title": "ExchangeRates",
-    "name": "exchange-rates",
-    "sources": [
+  "title": "Exchange rates",
+  "name": "exchange-rates",
+  "sources": [
+    {
+      "title": "Federal Reserve Bank of St. Louis",
+      "path": "https://fred.stlouisfed.org/categories/158"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
+      "path": "http://opendatacommons.org/licenses/pddl/"
+    }
+  ],
+  "resources": [
+    {
+      "path": "data/yearly.csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
+      "name": "yearly",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default",
+            "description": "Date in ISO format"
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "format": "default",
+            "description": "Foreign Exchange Rate to U.S, only AUD, IEP, NZD, GBP, EURO to U.S"
+          }
+        ],
+        "missingValues": [
+            ""
+        ]
+      }
+    },
+    {
+      "path": "data/monthly.csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
+      "name": "monthly",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default",
+            "description": "Date in ISO format"
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "format": "default",
+            "description": "Foreign Exchange Rate to U.S, only AUD, IEP, NZD, GBP, EURO to U.S"
+          }
+        ],
+        "missingValues": [
+            ""
+        ]
+      }
+    },
+    {
+      "path": "data/daily.csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
+      "name": "daily",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default",
+            "description": "Date in ISO format"
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "format": "default",
+            "description": "Foreign Exchange Rate to U.S, only AUD, IEP, NZD, GBP, EURO to U.S"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ],
+  "views": [
+    {
+      "name": "us-to-uk-foreign-exchange-rate",
+      "title": "U.S. / U.K. Foreign Exchange Rate since 1971",
+      "resources": [
         {
-            "title": "Federal Reserve Bank of St. Louis",
-            "path": "https://fred.stlouisfed.org/categories/158"
-        }
-    ],
-    "licences": [
-        {
-            "name": "odc-pddl",
-            "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
-            "path": "http://opendatacommons.org/licenses/pddl/"
-        }
-    ],
-    "views": [
-        {
-            "name": "exchange-rates-graph",
-            "title": "Daily exchange rates graph",
-            "path": "http://opendatacommons.org/licenses/pddl/"
-        }
-    ],
-    "resources": [
-        {
-            "path": "data/yearly.csv",
-            "profile": "tabular-data-resource",
-            "encoding": "utf-8",
-            "name": "yearly",
-            "format": "csv",
-            "mediatype": "text/csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "Date",
-                        "type": "date",
-                        "format": "default",
-                        "description": "Date in ISO format"
-                    },
-                    {
-                        "name": "Country",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Value",
-                        "type": "number",
-                        "format": "default"
-                    }
-                ],
-                "missingValues": [
-                    ""
-                ]
+          "name": "daily",
+          "transform": [
+            {
+              "type": "filter",
+              "expression": "data['Country'] === 'United Kingdom'"
             }
-        },
-        {
-            "path": "data/monthly.csv",
-            "profile": "tabular-data-resource",
-            "encoding": "utf-8",
-            "name": "monthly",
-            "format": "csv",
-            "mediatype": "text/csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "Date",
-                        "type": "date",
-                        "format": "default",
-                        "description": "Date in ISO format"
-                    },
-                    {
-                        "name": "Country",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Value",
-                        "type": "number",
-                        "format": "default"
-                    }
-                ],
-                "missingValues": [
-                    ""
-                ]
-            }
-        },
-        {
-            "path": "data/daily.csv",
-            "profile": "tabular-data-resource",
-            "encoding": "utf-8",
-            "name": "daily",
-            "format": "csv",
-            "mediatype": "text/csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "Date",
-                        "type": "date",
-                        "format": "default",
-                        "description": "Date in ISO format"
-                    },
-                    {
-                        "name": "Country",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "Value",
-                        "type": "number",
-                        "format": "default"
-                    }
-                ],
-                "missingValues": [
-                    ""
-                ]
-            }
+          ]
         }
-    ]
+      ],
+      "specType": "simple",
+      "spec": {
+        "type": "line",
+        "group": "Date",
+        "series": [
+          "Value"
+        ]
+      }
+    },
+    {
+      "name": "us-euro-foreign-exchange-rate",
+      "title": "U.S./Euro Foreign Exchange Rate since 1999",
+      "resources": [
+        {
+          "name": "daily",
+          "transform": [
+            {
+              "type": "filter",
+              "expression": "data['Country'] === 'Euro'"
+            }
+          ]
+        }
+      ],
+      "specType": "simple",
+      "spec": {
+        "type": "line",
+        "group": "Date",
+        "series": [
+          "Value"
+        ]
+      }
+    }
+  ]
 }
