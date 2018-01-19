@@ -1,30 +1,32 @@
-Foreign exchange rates from US federal reserve in daily, monthly, yearly basis
+Foreign exchange rates from US Federal Reserve in daily, monthly and yearly basis.
 
 ## Data
 
-Data is gathered from[https://fred.stlouisfed.org](https://fred.stlouisfed.org).
-Most of the countries have rates for days, months and years, but some only have for months.
-For every country there is a link to a .txt file. With explanation in header and table of data.
+Data is gathered from [https://fred.stlouisfed.org](https://fred.stlouisfed.org).
+Most of the countries have rates for days, months and years, but some only have for months. 
 Some countries have inverted values. Most are compared to USD, and some are USD compared to them.
 
-List of countries where U.S/Foreign Exchange Rate: Austalia, Ireland, New Zealand, United Kingdom
+Following country currencies have `USD/currency` ratio:
 
-Euro is in the form of US/EURO
+* Austalia
+* Euro
+* Ireland
+* New Zealand
+* United Kingdom
 
-The rest countries have Foreign Exchange Rate/U.S
+The rest of countries have `currency/USD` ratio.
 
+In this dataset, there are 3 granularities available:
 
-As the output three files are generated:
+* daily
+* monthly
+* yearly
 
-* daily.csv
-* monthly.csv
-* yearly.csv
+The data has following fields:
 
-CSV files have columns:
-
-* Date
-* Country
-* Value
+* Date - date in ISO format
+* Country - name of a country
+* Value - currency rate
 
 ## Preparation
 

@@ -33,13 +33,14 @@
           {
             "name": "Country",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "description": "Name of a country"
           },
           {
             "name": "Value",
             "type": "number",
             "format": "default",
-            "description": "Foreign Exchange Rate to U.S, only AUD, IEP, NZD, GBP, EURO to U.S"
+            "description": "Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."
           }
         ],
         "missingValues": [
@@ -65,13 +66,14 @@
           {
             "name": "Country",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "description": "Name of a country"
           },
           {
             "name": "Value",
             "type": "number",
             "format": "default",
-            "description": "Foreign Exchange Rate to U.S, only AUD, IEP, NZD, GBP, EURO to U.S"
+            "description": "Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."
           }
         ],
         "missingValues": [
@@ -97,13 +99,14 @@
           {
             "name": "Country",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "description": "Name of a country"
           },
           {
             "name": "Value",
             "type": "number",
             "format": "default",
-            "description": "Foreign Exchange Rate to U.S, only AUD, IEP, NZD, GBP, EURO to U.S"
+            "description": "Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."
           }
         ],
         "missingValues": [
@@ -115,7 +118,7 @@
   "views": [
     {
       "name": "us-to-uk-foreign-exchange-rate",
-      "title": "U.S. / U.K. Foreign Exchange Rate since 1971",
+      "title": "USA / GBP Foreign Exchange Rate since 1971",
       "resources": [
         {
           "name": "daily",
@@ -138,7 +141,7 @@
     },
     {
       "name": "us-euro-foreign-exchange-rate",
-      "title": "U.S./Euro Foreign Exchange Rate since 1999",
+      "title": "USA / EUR Foreign Exchange Rate since 1999",
       "resources": [
         {
           "name": "daily",
