@@ -1,4 +1,4 @@
-This is a scraping tool for getting exchange rates updated daily, monthly and annually.
+Foreign exchange rates from US federal reserve in daily, monthly, yearly basis
 
 ## Data
 
@@ -7,12 +7,7 @@ Most of the countries have rates for days, months and years, but some only have 
 For every country there is a link to a .txt file. With explanation in header and table of data.
 Some countries have inverted values. Most are compared to USD, and some are USD compared to them.
 
-List of countries where U.S/Foreign Exchange Rate:
-
-Austalia
-Ireland
-New Zealand 
-United Kingdom
+List of countries where U.S/Foreign Exchange Rate: Austalia, Ireland, New Zealand, United Kingdom
 
 Euro is in the form of US/EURO
 
