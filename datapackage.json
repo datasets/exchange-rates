@@ -1,10 +1,17 @@
 {
-  "bytes": 6840401,
-  "count_of_rows": 244862,
-  "hash": "97a3ff4d5d6d7587241f4fb0505a8d8d",
+  "bytes": 7363680,
+  "count_of_rows": 245082,
+  "hash": "7ea433d7b217af7f50124ac6725a1255",
   "homepage": "https://fred.stlouisfed.org",
-  "licenses": "PDDL-1.0",
-  "name": "exchange-rates",
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "name": "public_domain_dedication_and_license",
+      "url": "http://opendatacommons.org/licenses/pddl/1.0/",
+      "version": "1.0"
+    }
+  ],
+  "name": "us-euro-foreign-exchange-rate",
   "profile": "data-package",
   "resources": [
     {
@@ -14,19 +21,22 @@
       "schema": {
         "fields": [
           {
-            "format": "default",
+            "description": "Date in ISO format",
+            "format": "any",
             "name": "Date",
-            "type": "string"
+            "type": "date"
           },
           {
-            "format": "default",
+            "description": "Name of a country",
+            "format": "any",
             "name": "Country",
             "type": "string"
           },
           {
-            "format": "default",
-            "name": "Value",
-            "type": "string"
+            "description": "Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD.",
+            "format": "any",
+            "name": "Exchange rate",
+            "type": "number"
           }
         ],
         "missingValues": [
@@ -41,19 +51,22 @@
       "schema": {
         "fields": [
           {
-            "format": "default",
+            "description": "Date in ISO format",
+            "format": "any",
             "name": "Date",
-            "type": "string"
+            "type": "date"
           },
           {
-            "format": "default",
+            "description": "Name of a country",
+            "format": "any",
             "name": "Country",
             "type": "string"
           },
           {
-            "format": "default",
-            "name": "Value",
-            "type": "string"
+            "description": "Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD.",
+            "format": "any",
+            "name": "Exchange rate",
+            "type": "number"
           }
         ],
         "missingValues": [
@@ -62,24 +75,27 @@
       }
     },
     {
-      "name": "exchange-rates-yearly",
-      "path": "data/yearly.csv",
+      "name": "exchange-rates-annual",
+      "path": "data/annual.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
+            "description": "Date in ISO format",
             "format": "any",
             "name": "Date",
             "type": "date"
           },
           {
-            "format": "default",
+            "description": "Name of a country",
+            "format": "any",
             "name": "Country",
             "type": "string"
           },
           {
+            "description": "Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD.",
             "format": "any",
-            "name": "Value",
+            "name": "Exchange rate",
             "type": "number"
           }
         ],
@@ -89,6 +105,61 @@
       }
     }
   ],
-  "title": "Exchange Rates",
-  "version": "0.2.0"
+  "sources": [
+    {
+      "name": "federal-reserve-bank-st-louis",
+      "path": "https://fred.stlouisfed.org/categories/158",
+      "title": "Federal Reserve Bank of St. Louis"
+    }
+  ],
+  "title": "USA / EUR Foreign Exchange Rate since 1999",
+  "version": "0.2.0",
+  "views": [
+    {
+      "name": "us-to-uk-foreign-exchange-rate",
+      "resources": [
+        {
+          "name": "daily",
+          "transform": [
+            {
+              "expression": "data['Country'] === 'United Kingdom'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Exchange Rate"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "USA / GBP Foreign Exchange Rate since 1971"
+    },
+    {
+      "name": "us-euro-foreign-exchange-rate",
+      "resources": [
+        {
+          "name": "daily",
+          "transform": [
+            {
+              "expression": "data['Country'] === 'Euro'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Exchange Rate"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "USA / EUR Foreign Exchange Rate since 1999"
+    }
+  ]
 }
