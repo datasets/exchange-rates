@@ -1,6 +1,13 @@
-from dataflows import Flow, PackageWrapper, ResourceWrapper, validate
-from dataflows import add_metadata, dump_to_path, set_type
+import os
+
+from dataflows import Flow, validate, add_metadata, dump_to_path
+from dataflows import set_type, update_resource
 import urllib.request
+
+
+def readme(fpath='README.md'):
+    if os.path.exists(fpath):
+        return open(fpath).read()
 
 
 base_url = 'https://fred.stlouisfed.org/data/'
@@ -41,20 +48,6 @@ country_codes = {
     'United Kingdom': {'daily': 'DEXUSUK', 'monthly': 'EXUSUK', 'annual': ''},
     'Venezuela': {'daily': 'DEXVZUS', 'monthly': 'EXVZUS', 'annual': 'AEXVZUS'}
 }
-
-
-def rename(package: PackageWrapper):
-    package.pkg.descriptor['resources'][0]['name'] = 'exchange-rates-daily'
-    package.pkg.descriptor['resources'][0]['path'] = 'data/daily.csv'
-    package.pkg.descriptor['resources'][1]['name'] = 'exchange-rates-monthly'
-    package.pkg.descriptor['resources'][1]['path'] = 'data/monthly.csv'
-    package.pkg.descriptor['resources'][2]['name'] = 'exchange-rates-annual'
-    package.pkg.descriptor['resources'][2]['path'] = 'data/annual.csv'
-    yield package.pkg
-    res_iter = iter(package)
-    for res in res_iter:
-        yield res.it
-    yield from package
 
 
 def extract_exchange_rates(frequency):
@@ -155,25 +148,32 @@ exchange_rate_flow = Flow(
                 }
             }
         ],
-        version="0.2.0"
+        version="0.2.0",
+        readme=readme()
     ),
     extract_exchange_rates('daily'),
-    set_type('Date', type='date', format='any', description="Date in ISO format"),
-    set_type('Country', type='string', format='any', description="Name of a country"),
-    set_type('Exchange rate', type='number', format='any', description="Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."),
-
     extract_exchange_rates('monthly'),
-    set_type('Date', type='date', format='any', description="Date in ISO format"),
-    set_type('Country', type='string', format='any', description="Name of a country"),
-    set_type('Exchange rate', type='number', format='any', description="Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."),
-
     extract_exchange_rates('annual'),
-    set_type('Date', type='date', format='any', description="Date in ISO format"),
-    set_type('Country', type='string', format='any', description="Name of a country"),
-    set_type('Exchange rate', type='number', format='any', description="Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."),
-
-    rename,
+    update_resource('res_1', **{'name': 'daily', 'path':'data/daily.csv', 'dpp:streaming': True}),
+    update_resource('res_2', **{'name': 'monthly', 'path':'data/monthly.csv', 'dpp:streaming': True}),
+    update_resource('res_3', **{'name': 'annual', 'path':'data/annual.csv', 'dpp:streaming': True}),
+    set_type('Date', resources='daily', type='date', description="Date in ISO format"),
+    set_type('Country', resources='daily', type='string', description="Name of a country"),
+    set_type('Exchange rate', resources='daily', type='number', description="Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."),
+    set_type('Date', resources='monthly', type='date', description="Date in ISO format"),
+    set_type('Country', resources='monthly', type='string', description="Name of a country"),
+    set_type('Exchange rate', resources='monthly', type='number', description="Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."),
+    set_type('Date', resources='annual', type='date', description="Date in ISO format"),
+    set_type('Country', resources='annual', type='string', description="Name of a country"),
+    set_type('Exchange rate', resources='annual', type='number', description="Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."),
     validate(),
     dump_to_path(),
 )
-exchange_rate_flow.process()
+
+
+def flow(parameters, datapackage, resources, stats):
+    return exchange_rate_flow
+
+
+if __name__ == '__main__':
+    exchange_rate_flow.process()

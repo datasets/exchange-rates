@@ -1,0 +1,3 @@
+exchange-rates-flow:
+  pipeline:
+    - flow: exchange_rates_flow

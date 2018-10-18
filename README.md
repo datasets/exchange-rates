@@ -3,7 +3,7 @@ Foreign exchange rates from US Federal Reserve in daily, monthly and yearly basi
 ## Data
 
 Data is gathered from [https://fred.stlouisfed.org](https://fred.stlouisfed.org).
-Most of the countries have rates for days, months and years, but some only have for months. 
+Most of the countries have rates for days, months and years, but some only have for months.
 Some countries have inverted values. Most are compared to USD, and some are USD compared to them.
 
 Following country currencies have `USD/currency` ratio:
@@ -30,9 +30,16 @@ The data has following fields:
 
 ## Preparation
 
-Run python script:
+You will need Python 3.6 or greater and dataflows library to run the script
+
+To update the data run the process script locally:
+
 ```
-scripts/main.py
+# Install dataflows
+pip install dataflows
+
+# Run the script
+python exchange_rates_flow
 ```
 
 ## License

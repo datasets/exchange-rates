@@ -1,7 +1,7 @@
 {
   "bytes": 7363680,
   "count_of_rows": 245082,
-  "hash": "7ea433d7b217af7f50124ac6725a1255",
+  "hash": "f044d7d67f71d60939a86229afca2c71",
   "homepage": "https://fred.stlouisfed.org",
   "licenses": [
     {
@@ -13,28 +13,30 @@
   ],
   "name": "us-euro-foreign-exchange-rate",
   "profile": "data-package",
+  "readme": "Foreign exchange rates from US Federal Reserve in daily, monthly and yearly basis.\n\n## Data\n\nData is gathered from [https://fred.stlouisfed.org](https://fred.stlouisfed.org).\nMost of the countries have rates for days, months and years, but some only have for months. \nSome countries have inverted values. Most are compared to USD, and some are USD compared to them.\n\nFollowing country currencies have `USD/currency` ratio:\n\n* Austalia\n* Euro\n* Ireland\n* New Zealand\n* United Kingdom\n\nThe rest of countries have `currency/USD` ratio.\n\nIn this dataset, there are 3 granularities available:\n\n* daily\n* monthly\n* yearly\n\nThe data has following fields:\n\n* Date - date in ISO format\n* Country - name of a country\n* Value - currency rate\n\n## Preparation\n\nRun python script:\n```\nscripts/main.py\n```\n\n## License\n\nLicensed under the [Public Domain Dedication and License][pddl] (assuming\neither no rights or public domain license in source data).\n\n[pddl]: http://opendatacommons.org/licenses/pddl/1.0/",
   "resources": [
     {
-      "name": "exchange-rates-daily",
+      "dpp:streaming": true,
+      "name": "daily",
       "path": "data/daily.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
             "description": "Date in ISO format",
-            "format": "any",
+            "format": "default",
             "name": "Date",
             "type": "date"
           },
           {
             "description": "Name of a country",
-            "format": "any",
+            "format": "default",
             "name": "Country",
             "type": "string"
           },
           {
             "description": "Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD.",
-            "format": "any",
+            "format": "default",
             "name": "Exchange rate",
             "type": "number"
           }
@@ -45,26 +47,27 @@
       }
     },
     {
-      "name": "exchange-rates-monthly",
+      "dpp:streaming": true,
+      "name": "monthly",
       "path": "data/monthly.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
             "description": "Date in ISO format",
-            "format": "any",
+            "format": "default",
             "name": "Date",
             "type": "date"
           },
           {
             "description": "Name of a country",
-            "format": "any",
+            "format": "default",
             "name": "Country",
             "type": "string"
           },
           {
             "description": "Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD.",
-            "format": "any",
+            "format": "default",
             "name": "Exchange rate",
             "type": "number"
           }
@@ -75,26 +78,27 @@
       }
     },
     {
-      "name": "exchange-rates-annual",
+      "dpp:streaming": true,
+      "name": "annual",
       "path": "data/annual.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
             "description": "Date in ISO format",
-            "format": "any",
+            "format": "default",
             "name": "Date",
             "type": "date"
           },
           {
             "description": "Name of a country",
-            "format": "any",
+            "format": "default",
             "name": "Country",
             "type": "string"
           },
           {
             "description": "Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD.",
-            "format": "any",
+            "format": "default",
             "name": "Exchange rate",
             "type": "number"
           }
