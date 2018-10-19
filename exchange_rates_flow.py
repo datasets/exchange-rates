@@ -1,7 +1,6 @@
 import os
 
-from dataflows import Flow, validate, add_metadata, dump_to_path
-from dataflows import set_type, update_resource
+from dataflows import Flow, validate, add_metadata, set_type, update_resource
 import urllib.request
 
 
@@ -166,8 +165,7 @@ exchange_rate_flow = Flow(
     set_type('Date', resources='annual', type='date', description="Date in ISO format"),
     set_type('Country', resources='annual', type='string', description="Name of a country"),
     set_type('Exchange rate', resources='annual', type='number', description="Foreign Exchange Rate to USD. Only AUD, IEP, NZD, GBP and EUR to USD."),
-    validate(),
-    dump_to_path(),
+    validate()
 )
 
 
