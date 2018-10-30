@@ -39,7 +39,7 @@ To update the data run the process script locally:
 pip install dataflows
 
 # Run the script
-python exchange_rates_flow
+python exchange_rates_flow.py
 ```
 
 ## License
