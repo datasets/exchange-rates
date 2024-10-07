@@ -117,53 +117,5 @@
     }
   ],
   "title": "USA / EUR Foreign Exchange Rate since 1999",
-  "version": "0.2.0",
-  "views": [
-    {
-      "name": "us-to-uk-foreign-exchange-rate",
-      "resources": [
-        {
-          "name": "daily",
-          "transform": [
-            {
-              "expression": "data['Country'] === 'United Kingdom'",
-              "type": "filter"
-            }
-          ]
-        }
-      ],
-      "spec": {
-        "group": "Date",
-        "series": [
-          "Exchange Rate"
-        ],
-        "type": "line"
-      },
-      "specType": "simple",
-      "title": "USA / GBP Foreign Exchange Rate since 1971"
-    },
-    {
-      "name": "us-euro-foreign-exchange-rate",
-      "resources": [
-        {
-          "name": "daily",
-          "transform": [
-            {
-              "expression": "data['Country'] === 'Euro'",
-              "type": "filter"
-            }
-          ]
-        }
-      ],
-      "spec": {
-        "group": "Date",
-        "series": [
-          "Exchange Rate"
-        ],
-        "type": "line"
-      },
-      "specType": "simple",
-      "title": "USA / EUR Foreign Exchange Rate since 1999"
-    }
-  ]
+  "version": "0.2.0"
 }
