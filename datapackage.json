@@ -117,5 +117,6 @@
     }
   ],
   "title": "USA / EUR Foreign Exchange Rate since 1999",
-  "version": "0.2.0"
+  "version": "0.2.0",
+  "collection": "economic-data"
 }
