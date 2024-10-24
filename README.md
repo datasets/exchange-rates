@@ -1,3 +1,5 @@
+<a href="https://datahub.io/core/exchange-rates"><img src="https://badgen.net/badge/icon/View%20on%20datahub.io/orange?icon=https://datahub.io/datahub-cube-badge-icon.svg&label&scale=1.25)" alt="badge" /></a>
+
 Foreign exchange rates from US Federal Reserve in daily, monthly and yearly basis.
 
 ## Data
