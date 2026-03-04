@@ -1,0 +1,44 @@
+name: Update exchange-rates dataset
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run updater
+        working-directory: scripts
+        run: python main.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "Automated commit"
+          git diff --quiet && echo "No changes to commit" || (
+            git add data/ &&
+            git commit -m "Automated commit" &&
+            git push origin main
+          )
