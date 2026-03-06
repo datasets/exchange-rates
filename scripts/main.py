@@ -1,15 +1,8 @@
-import urllib.request
 import csv
 import io
-from collections import OrderedDict
 from pathlib import Path
 
-import numpy as np
-import os
 import requests
-
-import sys
-from datapackage import Package
 
 from country_codes import country_codes, inverse
 
