@@ -1,5 +1,6 @@
 import csv
 import io
+import tempfile
 from pathlib import Path
 
 import requests
@@ -10,11 +11,12 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT_DIR / "data"
 
 base_url = "https://fred.stlouisfed.org/graph/fredgraph.csv?id="
+HEADER = ["Date", "Country", "Exchange rate"]
 
 
 def values(frequency):
     output_array = []
-    number = -1
+    errors = []
     for country in country_codes:
         if frequency == "daily":
             type_num = 0
@@ -23,10 +25,8 @@ def values(frequency):
         else:
             type_num = 2
         specific_part = country_codes[country][type_num]
-        url = base_url + specific_part
-        print(url)
-        number = number + 1
         if specific_part != "":
+            url = base_url + specific_part
             try:
                 response = requests.get(url, timeout=60)
                 response.raise_for_status()
@@ -45,25 +45,37 @@ def values(frequency):
                             value = str(round(1 / float(value), 4))
 
                     country_array = [date, country, value]
-                    print(country_array)
                     output_array.append(country_array)
-            except Exception:
-                continue
+            except requests.RequestException as exc:
+                errors.append(f"{country}: {exc}")
+
+    if errors:
+        raise RuntimeError(
+            f"Failed to fetch {frequency} exchange rates for {len(errors)} countries: "
+            + "; ".join(errors)
+        )
+
+    if not output_array:
+        raise RuntimeError(f"No rows fetched for {frequency} exchange rates")
 
     return output_array
 
 
 def print_to_csv(output, location):
-    file = open(location, "w")
-    hdr = "Date,Country,Value"
-    file.write(hdr + "\n")
-    for triplet in output:
-        file.write(triplet[0] + "," + triplet[1] + "," + triplet[2] + "\n")
+    destination = Path(location)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile(
+        "w", newline="", delete=False, dir=destination.parent, encoding="utf-8"
+    ) as tmp_file:
+        writer = csv.writer(tmp_file)
+        writer.writerow(HEADER)
+        writer.writerows(output)
+        temp_path = Path(tmp_file.name)
 
-    file.close()
+    temp_path.replace(destination)
 
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 print_to_csv(values("daily"), str(DATA_DIR / "daily.csv"))
 print_to_csv(values("monthly"), str(DATA_DIR / "monthly.csv"))
-print_to_csv(values("yearly"), str(DATA_DIR / "yearly.csv"))
+print_to_csv(values("yearly"), str(DATA_DIR / "annual.csv"))

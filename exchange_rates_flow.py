@@ -116,7 +116,7 @@ exchange_rate_flow = Flow(
                     }
                 ],
                 "specType": "simple",
-                "spec": {"type": "line", "group": "Date", "series": ["Exchange Rate"]},
+                "spec": {"type": "line", "group": "Date", "series": ["Exchange rate"]},
             },
             {
                 "name": "us-euro-foreign-exchange-rate",
@@ -133,7 +133,7 @@ exchange_rate_flow = Flow(
                     }
                 ],
                 "specType": "simple",
-                "spec": {"type": "line", "group": "Date", "series": ["Exchange Rate"]},
+                "spec": {"type": "line", "group": "Date", "series": ["Exchange rate"]},
             },
         ],
         version="0.2.0",
