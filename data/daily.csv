@@ -14569,6 +14569,11 @@ Date,Country,Exchange rate
 2026-11-04,Australia,1.4263
 2026-11-05,Australia,1.4366
 2026-11-06,Australia,1.4545
+2026-11-09,Australia,1.4465
+2026-11-10,Australia,1.4599
+2026-11-11,Australia,
+2026-11-12,Australia,1.4684
+2026-11-13,Australia,1.476
 1995-01-02,Brazil,0.8440
 1995-01-03,Brazil,0.8450
 1995-01-04,Brazil,0.8450
@@ -22879,6 +22884,11 @@ Date,Country,Exchange rate
 2026-11-04,Brazil,5.4700
 2026-11-05,Brazil,5.4767
 2026-11-06,Brazil,5.4895
+2026-11-09,Brazil,5.5171
+2026-11-10,Brazil,5.5966
+2026-11-11,Brazil,
+2026-11-12,Brazil,5.6307
+2026-11-13,Brazil,5.6449
 1971-01-04,Canada,1.0109
 1971-01-05,Canada,1.0102
 1971-01-06,Canada,1.0106
@@ -37449,6 +37459,11 @@ Date,Country,Exchange rate
 2026-11-04,Canada,1.3973
 2026-11-05,Canada,1.3980
 2026-11-06,Canada,1.4106
+2026-11-09,Canada,1.4130
+2026-11-10,Canada,1.4197
+2026-11-11,Canada,
+2026-11-12,Canada,1.4253
+2026-11-13,Canada,1.4256
 1981-01-02,China,1.5341
 1981-01-05,China,1.5418
 1981-01-06,China,1.5264
@@ -49410,6 +49425,11 @@ Date,Country,Exchange rate
 2026-11-04,China,6.6731
 2026-11-05,China,6.6680
 2026-11-06,China,6.6760
+2026-11-09,China,6.6727
+2026-11-10,China,6.6703
+2026-11-11,China,
+2026-11-12,China,6.6704
+2026-11-13,China,6.6710
 1971-01-04,Denmark,7.4850
 1971-01-05,Denmark,7.4872
 1971-01-06,Denmark,7.4839
@@ -63980,6 +64000,11 @@ Date,Country,Exchange rate
 2026-11-04,Denmark,6.6626
 2026-11-05,Denmark,6.6525
 2026-11-06,Denmark,6.7016
+2026-11-09,Denmark,6.6718
+2026-11-10,Denmark,6.7026
+2026-11-11,Denmark,
+2026-11-12,Denmark,6.7611
+2026-11-13,Denmark,6.7751
 1999-01-04,Euro,0.8466
 1999-01-05,Euro,0.8503
 1999-01-06,Euro,0.8594
@@ -71245,6 +71270,11 @@ Date,Country,Exchange rate
 2026-11-04,Euro,0.8915
 2026-11-05,Euro,0.8901
 2026-11-06,Euro,0.8965
+2026-11-09,Euro,0.8925
+2026-11-10,Euro,0.8966
+2026-11-11,Euro,
+2026-11-12,Euro,0.9045
+2026-11-13,Euro,0.9063
 1981-01-02,Hong Kong,5.1350
 1981-01-05,Hong Kong,5.1270
 1981-01-06,Hong Kong,5.1300
@@ -83206,6 +83236,11 @@ Date,Country,Exchange rate
 2026-11-04,Hong Kong,7.8457
 2026-11-05,Hong Kong,7.8428
 2026-11-06,Hong Kong,7.8402
+2026-11-09,Hong Kong,7.8417
+2026-11-10,Hong Kong,7.8451
+2026-11-11,Hong Kong,
+2026-11-12,Hong Kong,7.8441
+2026-11-13,Hong Kong,7.8459
 1973-01-02,India,8.0200
 1973-01-03,India,8.0200
 1973-01-04,India,8.0000
@@ -97255,6 +97290,11 @@ Date,Country,Exchange rate
 2026-11-04,India,94.6400
 2026-11-05,India,94.4800
 2026-11-06,India,93.9100
+2026-11-09,India,93.9300
+2026-11-10,India,93.9300
+2026-11-11,India,
+2026-11-12,India,94.0400
+2026-11-13,India,94.2400
 1971-01-04,Japan,357.73
 1971-01-05,Japan,357.81
 1971-01-06,Japan,357.86
@@ -111825,6 +111865,11 @@ Date,Country,Exchange rate
 2026-11-04,Japan,158.44
 2026-11-05,Japan,157.76
 2026-11-06,Japan,158.23
+2026-11-09,Japan,157.99
+2026-11-10,Japan,158.76
+2026-11-11,Japan,
+2026-11-12,Japan,159.60
+2026-11-13,Japan,159.93
 1971-01-04,Malaysia,3.0867
 1971-01-05,Malaysia,3.0861
 1971-01-06,Malaysia,3.0845
@@ -126395,6 +126440,11 @@ Date,Country,Exchange rate
 2026-11-04,Malaysia,4.0609
 2026-11-05,Malaysia,4.0449
 2026-11-06,Malaysia,4.0565
+2026-11-09,Malaysia,4.0565
+2026-11-10,Malaysia,4.0543
+2026-11-11,Malaysia,
+2026-11-12,Malaysia,4.0760
+2026-11-13,Malaysia,4.0845
 1993-11-08,Mexico,3.1520
 1993-11-09,Mexico,3.2400
 1993-11-10,Mexico,3.2400
@@ -135005,6 +135055,11 @@ Date,Country,Exchange rate
 2026-11-04,Mexico,18.5613
 2026-11-05,Mexico,18.7200
 2026-11-06,Mexico,18.6226
+2026-11-09,Mexico,18.5970
+2026-11-10,Mexico,18.6630
+2026-11-11,Mexico,
+2026-11-12,Mexico,18.6060
+2026-11-13,Mexico,18.5690
 1971-01-04,New Zealand,0.8978
 1971-01-05,New Zealand,0.8974
 1971-01-06,New Zealand,0.8968
@@ -149575,6 +149630,11 @@ Date,Country,Exchange rate
 2026-11-04,New Zealand,1.7787
 2026-11-05,New Zealand,1.7803
 2026-11-06,New Zealand,1.8021
+2026-11-09,New Zealand,1.78
+2026-11-10,New Zealand,1.7886
+2026-11-11,New Zealand,
+2026-11-12,New Zealand,1.8025
+2026-11-13,New Zealand,1.8096
 1971-01-04,Norway,7.1359
 1971-01-05,Norway,7.1422
 1971-01-06,Norway,7.1367
@@ -164145,6 +164205,11 @@ Date,Country,Exchange rate
 2026-11-04,Norway,9.3064
 2026-11-05,Norway,9.2890
 2026-11-06,Norway,9.4445
+2026-11-09,Norway,9.4094
+2026-11-10,Norway,9.5276
+2026-11-11,Norway,
+2026-11-12,Norway,9.5767
+2026-11-13,Norway,9.5707
 1981-01-02,Singapore,2.0930
 1981-01-05,Singapore,2.0810
 1981-01-06,Singapore,2.0800
@@ -176106,6 +176171,11 @@ Date,Country,Exchange rate
 2026-11-04,Singapore,1.2791
 2026-11-05,Singapore,1.2768
 2026-11-06,Singapore,1.2821
+2026-11-09,Singapore,1.2797
+2026-11-10,Singapore,1.2826
+2026-11-11,Singapore,
+2026-11-12,Singapore,1.2868
+2026-11-13,Singapore,1.2882
 1980-01-02,South Africa,0.8271
 1980-01-03,South Africa,0.8271
 1980-01-04,South Africa,0.8268
@@ -188329,6 +188399,11 @@ Date,Country,Exchange rate
 2026-11-04,South Africa,16.3997
 2026-11-05,South Africa,16.4351
 2026-11-06,South Africa,16.5310
+2026-11-09,South Africa,16.4175
+2026-11-10,South Africa,16.5775
+2026-11-11,South Africa,
+2026-11-12,South Africa,16.7775
+2026-11-13,South Africa,16.9275
 1981-04-13,South Korea,675.40
 1981-04-14,South Korea,676.70
 1981-04-15,South Korea,676.70
@@ -200219,6 +200294,11 @@ Date,Country,Exchange rate
 2026-11-04,South Korea,1341.60
 2026-11-05,South Korea,1352.95
 2026-11-06,South Korea,1361.89
+2026-11-09,South Korea,1344.55
+2026-11-10,South Korea,1343.78
+2026-11-11,South Korea,
+2026-11-12,South Korea,1335.40
+2026-11-13,South Korea,1336.58
 1971-01-04,Sweden,5.1643
 1971-01-05,Sweden,5.1628
 1971-01-06,Sweden,5.1614
@@ -214789,6 +214869,11 @@ Date,Country,Exchange rate
 2026-11-04,Sweden,9.7535
 2026-11-05,Sweden,9.7819
 2026-11-06,Sweden,9.8771
+2026-11-09,Sweden,9.8248
+2026-11-10,Sweden,9.9002
+2026-11-11,Sweden,
+2026-11-12,Sweden,10.0242
+2026-11-13,Sweden,10.0750
 1971-01-04,Switzerland,4.3180
 1971-01-05,Switzerland,4.3117
 1971-01-06,Switzerland,4.3113
@@ -229359,6 +229444,11 @@ Date,Country,Exchange rate
 2026-11-04,Switzerland,0.8175
 2026-11-05,Switzerland,0.8144
 2026-11-06,Switzerland,0.8192
+2026-11-09,Switzerland,0.8211
+2026-11-10,Switzerland,0.8263
+2026-11-11,Switzerland,
+2026-11-12,Switzerland,0.8348
+2026-11-13,Switzerland,0.8389
 1983-10-03,Taiwan,39.4200
 1983-10-04,Taiwan,39.4200
 1983-10-05,Taiwan,39.4200
@@ -240604,6 +240694,11 @@ Date,Country,Exchange rate
 2026-11-04,Taiwan,32.8200
 2026-11-05,Taiwan,32.9400
 2026-11-06,Taiwan,32.8500
+2026-11-09,Taiwan,32.8200
+2026-11-10,Taiwan,32.8600
+2026-11-11,Taiwan,
+2026-11-12,Taiwan,32.9300
+2026-11-13,Taiwan,32.8700
 1981-01-02,Thailand,20.6611
 1981-01-05,Thailand,20.6611
 1981-01-06,Thailand,20.6611
@@ -252565,6 +252660,11 @@ Date,Country,Exchange rate
 2026-11-04,Thailand,33.6200
 2026-11-05,Thailand,33.4100
 2026-11-06,Thailand,33.5300
+2026-11-09,Thailand,33.4500
+2026-11-10,Thailand,33.6300
+2026-11-11,Thailand,
+2026-11-12,Thailand,33.8900
+2026-11-13,Thailand,33.8800
 1971-01-04,United Kingdom,0.4177
 1971-01-05,United Kingdom,0.4176
 1971-01-06,United Kingdom,0.4172
@@ -267135,6 +267235,11 @@ Date,Country,Exchange rate
 2026-11-04,United Kingdom,0.743
 2026-11-05,United Kingdom,0.7417
 2026-11-06,United Kingdom,0.7479
+2026-11-09,United Kingdom,0.7452
+2026-11-10,United Kingdom,0.7506
+2026-11-11,United Kingdom,
+2026-11-12,United Kingdom,0.7553
+2026-11-13,United Kingdom,0.7569
 2000-01-03,Venezuela,0.6498
 2000-01-04,Venezuela,0.6502
 2000-01-05,Venezuela,0.6515
@@ -274140,3 +274245,8 @@ Date,Country,Exchange rate
 2026-11-04,Venezuela,890.9843
 2026-11-05,Venezuela,892.6504
 2026-11-06,Venezuela,893.8822
+2026-11-09,Venezuela,895.2945
+2026-11-10,Venezuela,897.0223
+2026-11-11,Venezuela,
+2026-11-12,Venezuela,902.1874
+2026-11-13,Venezuela,909.3500
